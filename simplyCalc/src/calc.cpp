@@ -1,6 +1,6 @@
 #include "calc.h"
 
-void show_help() {
+void show_help() { //wyswietlanie dokumentacji
     cout << "Simple calculator" << endl;
     cout << "sipleCalc [nazwa dzialania]" << endl << endl;
     cout << "Dzialania:" << endl;
@@ -15,14 +15,14 @@ void show_help() {
     cout << "\tWyswietlanie tej dokumentacji" << endl << endl;
 }
 
-void add(int a, int b) {
+void add(int a, int b) { //funkcja dodawania
     cout << a << " + " << b << " = " << a + b << endl;
 }
 
-void subtract(int a, int b) {
+void subtract(int a, int b) { //funkcja odejmowania
     cout << a << " - " << b << " = " << a - b << endl;
 }
 
-void volume(double a, double b, double h, double H) {
+void volume(double a, double b, double h, double H) { //funkcja obliczania objetosci graniastoslupa
     cout << "Objetosc graniastoslupa o podstawie trapezu o podanych rozmiarach wynosi: " << (a + b) * h * H / 2 << endl;
 }
