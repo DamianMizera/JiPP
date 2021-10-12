@@ -1,0 +1,3 @@
+C:/Users/damia/CLionProjects/JiPP/simplyCalc/cmake-build-debug/CMakeFiles/simplyCalc.dir
+C:/Users/damia/CLionProjects/JiPP/simplyCalc/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/damia/CLionProjects/JiPP/simplyCalc/cmake-build-debug/CMakeFiles/rebuild_cache.dir
