@@ -1,0 +1,3 @@
+C:/Users/damia/CLionProjects/JiPP/allocation_basics/cmake-build-debug/CMakeFiles/HelloWorld.dir
+C:/Users/damia/CLionProjects/JiPP/allocation_basics/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/damia/CLionProjects/JiPP/allocation_basics/cmake-build-debug/CMakeFiles/rebuild_cache.dir
