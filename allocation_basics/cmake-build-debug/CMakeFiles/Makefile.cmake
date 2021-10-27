@@ -51,5 +51,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/HelloWorld.dir/DependInfo.cmake"
+  "CMakeFiles/allocation_basics.dir/DependInfo.cmake"
   )

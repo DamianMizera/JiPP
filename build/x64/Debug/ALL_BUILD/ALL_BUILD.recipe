@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\damia\CLionProjects\JiPP\build\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\damia\CLionProjects\JiPP\build\allocation_basics\Debug\allocation_basics.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\damia\CLionProjects\JiPP\build\arrays\Debug\arrays.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\damia\CLionProjects\JiPP\build\calcArea\Debug\calcArea.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\damia\CLionProjects\JiPP\build\constructors\Debug\constructors.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\damia\CLionProjects\JiPP\build\destructor\Debug\destructor.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\damia\CLionProjects\JiPP\build\exceptions\Debug\exceptions.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\damia\CLionProjects\JiPP\build\firstClass\Debug\firstClass.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\damia\CLionProjects\JiPP\build\firstLibCall\Debug\firstLibCall.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\damia\CLionProjects\JiPP\build\pointers\Debug\pointers.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\damia\CLionProjects\JiPP\build\simplyCalc\Debug\simplyCalc.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\damia\CLionProjects\JiPP\build\structures\Debug\structures.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\damia\CLionProjects\JiPP\build\x64\Debug\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>
