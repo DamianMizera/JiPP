@@ -222,6 +222,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{11E4DF76-6772-33B8-8BD4-D0FFF4136357}</Project>
       <Name>firstLibCall</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\matrixApp\matrixApp.vcxproj">
+      <Project>{E2CCAFE2-CC48-3338-B7EF-520DCD443918}</Project>
+      <Name>matrixApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\matrixLib\matrixLib.vcxproj">
+      <Project>{937D8699-87A8-313C-88AF-5A724732FD9F}</Project>
+      <Name>matrixLib</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\pointers\pointers.vcxproj">
       <Project>{9B02B671-F2E4-3749-8B3D-F2D0BC18DBC3}</Project>
       <Name>pointers</Name>

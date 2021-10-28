@@ -28,3 +28,7 @@ C:/Users/damia/CLionProjects/JiPP/build/constructors/CMakeFiles/constructors.dir
 C:/Users/damia/CLionProjects/JiPP/build/constructors/CMakeFiles/ALL_BUILD.dir
 C:/Users/damia/CLionProjects/JiPP/build/destructor/CMakeFiles/destructor.dir
 C:/Users/damia/CLionProjects/JiPP/build/destructor/CMakeFiles/ALL_BUILD.dir
+C:/Users/damia/CLionProjects/JiPP/build/matrixApp/CMakeFiles/matrixApp.dir
+C:/Users/damia/CLionProjects/JiPP/build/matrixApp/CMakeFiles/ALL_BUILD.dir
+C:/Users/damia/CLionProjects/JiPP/build/matrixLib/CMakeFiles/matrixLib.dir
+C:/Users/damia/CLionProjects/JiPP/build/matrixLib/CMakeFiles/ALL_BUILD.dir

@@ -13,3 +13,6 @@ add_subdirectory(structures)
 add_subdirectory(firstClass)
 add_subdirectory(constructors)
 add_subdirectory(destructor)
+
+add_subdirectory(matrixApp)
+add_subdirectory(matrixLib)

@@ -273,6 +273,24 @@ firstLibCall_IS_TOP_LEVEL:STATIC=OFF
 firstLibCall_SOURCE_DIR:STATIC=C:/Users/damia/CLionProjects/JiPP/firstLibCall
 
 //Value Computed by CMake
+matrixApp_BINARY_DIR:STATIC=C:/Users/damia/CLionProjects/JiPP/build/matrixApp
+
+//Value Computed by CMake
+matrixApp_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+matrixApp_SOURCE_DIR:STATIC=C:/Users/damia/CLionProjects/JiPP/matrixApp
+
+//Value Computed by CMake
+matrixLib_BINARY_DIR:STATIC=C:/Users/damia/CLionProjects/JiPP/build/matrixLib
+
+//Value Computed by CMake
+matrixLib_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+matrixLib_SOURCE_DIR:STATIC=C:/Users/damia/CLionProjects/JiPP/matrixLib
+
+//Value Computed by CMake
 pointers_BINARY_DIR:STATIC=C:/Users/damia/CLionProjects/JiPP/build/pointers
 
 //Value Computed by CMake
@@ -384,7 +402,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=13
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib
