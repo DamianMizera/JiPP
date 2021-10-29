@@ -64,11 +64,11 @@ int inputIntNumber(string text) { //wczytywanie pojedynczej liczby typu int
 
     int ret;
     cout << text;
-    do {
+    while(!(cin >> ret)) {
+        cout << "Wykryto niedozwolony znak! Sprobuj jeszcze raz: ";
         cin.clear();
-        cin.ignore();
-        cin >> ret;
-    } while(!cin);
+        cin.ignore(100, '\n');
+    }
     return ret;
 }
 
@@ -76,11 +76,11 @@ double inputDoubleNumber(string text) { //odpowiednik powyzszej funkcji dla dany
 
     double ret;
     cout << text;
-    do {
+    while(!(cin >> ret)) {
+        cout << "Wykryto niedozwolony znak! Sprobuj jeszcze raz: ";
         cin.clear();
-        cin.ignore();
-        cin >> ret;
-    } while(!cin);
+        cin.ignore(100, '\n');
+    }
     return ret;
 }
 
@@ -88,28 +88,28 @@ int** inputIntMatrix(string text, int &numberOfRows, int &numberOfColumns) { //w
 
     cout << text;
     cout << "Podaj liczbe wierszy Twojej macierzy: ";
-    do {
+    while(!(cin >> numberOfRows)) {
+        cout << "Wykryto niedozwolony znak! Sprobuj jeszcze raz: ";
         cin.clear();
-        cin.ignore();
-        cin >> numberOfRows;
-    } while(!cin);
+        cin.ignore(100, '\n');
+    }
     cout << "Podaj liczbe kolumn Twojej macierzy: ";
-    do {
+    while(!(cin >> numberOfColumns)) {
+        cout << "Wykryto niedozwolony znak! Sprobuj jeszcze raz: ";
         cin.clear();
-        cin.ignore();
-        cin >> numberOfColumns;
-    } while(!cin);
+        cin.ignore(100, '\n');
+    }
 
     int** matrix = allocateIntMatrix(numberOfRows, numberOfColumns);
 
     for(int i = 0; i < numberOfRows; i++) {
         cout << "Wprowadz elementy wiersza numer " << i+1 << ": \n";
         for(int j = 0; j < numberOfColumns; j++) {
-            do {
+            while(!(cin >> matrix[i][j])) {
+                cout << "Wykryto niedozwolony znak! Sprobuj jeszcze raz: ";
                 cin.clear();
-                cin.ignore();
-                cin >> matrix[i][j];
-            } while (!cin);
+                cin.ignore(100, '\n');
+            }
         }
     }
 
@@ -124,28 +124,28 @@ double** inputDoubleMatrix(string text, int &numberOfRows, int &numberOfColumns)
 
     cout << text;
     cout << "Podaj liczbe wierszy Twojej macierzy: ";
-    do {
+    while(!(cin >> numberOfRows)) {
+        cout << "Wykryto niedozwolony znak! Sprobuj jeszcze raz: ";
         cin.clear();
-        cin.ignore();
-        cin >> numberOfRows;
-    } while(!cin);
+        cin.ignore(100, '\n');
+    }
     cout << "Podaj liczbe kolumn Twojej macierzy: ";
-    do {
+    while(!(cin >> numberOfColumns)) {
+        cout << "Wykryto niedozwolony znak! Sprobuj jeszcze raz: ";
         cin.clear();
-        cin.ignore();
-        cin >> numberOfColumns;
-    } while(!cin);
+        cin.ignore(100, '\n');
+    }
 
     double** matrix = allocateDoubleMatrix(numberOfRows, numberOfColumns);
 
     for(int i = 0; i < numberOfRows; i++) {
         cout << "Wprowadz elementy wiersza numer " << i+1 << ": \n";
         for(int j = 0; j < numberOfColumns; j++) {
-            do {
+            while(!(cin >> matrix[i][j])) {
+                cout << "Wykryto niedozwolony znak! Sprobuj jeszcze raz: ";
                 cin.clear();
-                cin.ignore();
-                cin >> matrix[i][j];
-            } while (!cin);
+                cin.ignore(100, '\n');
+            }
         }
     }
 
@@ -174,51 +174,81 @@ int main(int argc, char* argv[]) {
     if(operation == "addMatrix") {
         bool floatNumbers = selectDataType();
         if(floatNumbers) {
-            int numberOfRows, numberOfColumns;
-            double** matrixA = inputDoubleMatrix("Wprowadz macierz A:\n", numberOfRows, numberOfColumns);
-            double** matrixB = inputDoubleMatrix("Wprowadz macierz B:\n", numberOfRows, numberOfColumns);
-            double** matrixResult = addMatrix(matrixA, matrixB, numberOfRows, numberOfColumns);
-            printMatrix(matrixResult, numberOfRows, numberOfColumns, "Wynik: \n");
-            deallocateMatrix(matrixA, numberOfRows);
-            deallocateMatrix(matrixB, numberOfRows);
-            deallocateMatrix(matrixResult, numberOfRows);
+            int numberOfRowsA, numberOfColumnsA, numberOfRowsB, numberOfColumnsB;
+            double** matrixA = inputDoubleMatrix("Wprowadz macierz A:\n", numberOfRowsA, numberOfColumnsA);
+            double** matrixB = inputDoubleMatrix("Wprowadz macierz B:\n", numberOfRowsB, numberOfColumnsB);
+            if(numberOfRowsA != numberOfRowsB || numberOfColumnsA != numberOfColumnsB) {
+                cout << "Rozmiary macierzy sa nieprawidlowe dla tej operacji! \nProgram zakonczony.";
+                deallocateMatrix(matrixA, numberOfRowsA);
+                deallocateMatrix(matrixB, numberOfRowsB);
+                return 0;
+            }
+            double** matrixResult = addMatrix(matrixA, matrixB, numberOfRowsA, numberOfColumnsA);
+            printMatrix(matrixResult, numberOfRowsA, numberOfColumnsA, "Wynik: \n");
+            deallocateMatrix(matrixA, numberOfRowsA);
+            deallocateMatrix(matrixB, numberOfRowsB);
+            deallocateMatrix(matrixResult, numberOfRowsA);
         } else {
-            int numberOfRows, numberOfColumns;
-            int** matrixA = inputIntMatrix("Wprowadz macierz A: \n", numberOfRows, numberOfColumns);
-            int** matrixB = inputIntMatrix("Wprowadz macierz B: \n", numberOfRows, numberOfColumns);
-            int** matrixResult = addMatrix(matrixA, matrixB, numberOfRows, numberOfColumns);
-            printMatrix(matrixResult, numberOfRows, numberOfColumns, "Wynik: \n");
-            deallocateMatrix(matrixA, numberOfRows);
-            deallocateMatrix(matrixB, numberOfRows);
-            deallocateMatrix(matrixResult, numberOfRows);
+            int numberOfRowsA, numberOfColumnsA, numberOfRowsB, numberOfColumnsB;
+            int** matrixA = inputIntMatrix("Wprowadz macierz A:\n", numberOfRowsA, numberOfColumnsA);
+            int** matrixB = inputIntMatrix("Wprowadz macierz B:\n", numberOfRowsB, numberOfColumnsB);
+            if(numberOfRowsA != numberOfRowsB || numberOfColumnsA != numberOfColumnsB) {
+                cout << "Rozmiary macierzy sa nieprawidlowe dla tej operacji! \nProgram zakonczony.";
+                deallocateMatrix(matrixA, numberOfRowsA);
+                deallocateMatrix(matrixB, numberOfRowsB);
+                return 0;
+            }
+            int** matrixResult = addMatrix(matrixA, matrixB, numberOfRowsA, numberOfColumnsA);
+            printMatrix(matrixResult, numberOfRowsA, numberOfColumnsA, "Wynik: \n");
+            deallocateMatrix(matrixA, numberOfRowsA);
+            deallocateMatrix(matrixB, numberOfRowsB);
+            deallocateMatrix(matrixResult, numberOfRowsA);
         }
     } else if(operation == "subtractMatrix") {
         bool floatNumbers = selectDataType();
         if(floatNumbers) {
-            int numberOfRows, numberOfColumns;
-            double** matrixA = inputDoubleMatrix("Wprowadz macierz A: \n", numberOfRows, numberOfColumns);
-            double** matrixB = inputDoubleMatrix("Wprowadz macierz B: \n", numberOfRows, numberOfColumns);
-            double** matrixResult = subtractMatrix(matrixA, matrixB, numberOfRows, numberOfColumns);
-            printMatrix(matrixResult, numberOfRows, numberOfColumns, "Wynik: \n");
-            deallocateMatrix(matrixA, numberOfRows);
-            deallocateMatrix(matrixB, numberOfRows);
-            deallocateMatrix(matrixResult, numberOfRows);
+            int numberOfRowsA, numberOfColumnsA, numberOfRowsB, numberOfColumnsB;
+            double** matrixA = inputDoubleMatrix("Wprowadz macierz A:\n", numberOfRowsA, numberOfColumnsA);
+            double** matrixB = inputDoubleMatrix("Wprowadz macierz B:\n", numberOfRowsB, numberOfColumnsB);
+            if(numberOfRowsA != numberOfRowsB || numberOfColumnsA != numberOfColumnsB) {
+                cout << "Rozmiary macierzy sa nieprawidlowe dla tej operacji! \nProgram zakonczony.";
+                deallocateMatrix(matrixA, numberOfRowsA);
+                deallocateMatrix(matrixB, numberOfRowsB);
+                return 0;
+            }
+            double** matrixResult = subtractMatrix(matrixA, matrixB, numberOfRowsA, numberOfColumnsA);
+            printMatrix(matrixResult, numberOfRowsA, numberOfColumnsA, "Wynik: \n");
+            deallocateMatrix(matrixA, numberOfRowsA);
+            deallocateMatrix(matrixB, numberOfRowsB);
+            deallocateMatrix(matrixResult, numberOfRowsA);
         } else {
-            int numberOfRows, numberOfColumns;
-            int** matrixA = inputIntMatrix("Wprowadz macierz A: \n", numberOfRows, numberOfColumns);
-            int** matrixB = inputIntMatrix("Wprowadz macierz B: \n", numberOfRows, numberOfColumns);
-            int** matrixResult = subtractMatrix(matrixA, matrixB, numberOfRows, numberOfColumns);
-            printMatrix(matrixResult, numberOfRows, numberOfColumns, "Wynik: \n");
-            deallocateMatrix(matrixA, numberOfRows);
-            deallocateMatrix(matrixB, numberOfRows);
-            deallocateMatrix(matrixResult, numberOfRows);
+            int numberOfRowsA, numberOfColumnsA, numberOfRowsB, numberOfColumnsB;
+            int** matrixA = inputIntMatrix("Wprowadz macierz A:\n", numberOfRowsA, numberOfColumnsA);
+            int** matrixB = inputIntMatrix("Wprowadz macierz B:\n", numberOfRowsB, numberOfColumnsB);
+            if(numberOfRowsA != numberOfRowsB || numberOfColumnsA != numberOfColumnsB) {
+                cout << "Rozmiary macierzy sa nieprawidlowe dla tej operacji! \nProgram zakonczony.";
+                deallocateMatrix(matrixA, numberOfRowsA);
+                deallocateMatrix(matrixB, numberOfRowsB);
+                return 0;
+            }
+            int** matrixResult = subtractMatrix(matrixA, matrixB, numberOfRowsA, numberOfColumnsA);
+            printMatrix(matrixResult, numberOfRowsA, numberOfColumnsA, "Wynik: \n");
+            deallocateMatrix(matrixA, numberOfRowsA);
+            deallocateMatrix(matrixB, numberOfRowsB);
+            deallocateMatrix(matrixResult, numberOfRowsA);
         }
     } else if(operation == "multiplyMatrix") {
         bool floatNumbers = selectDataType();
         if(floatNumbers) {
             int numberOfRowsA, numberOfColumnsA, numberOfRowsB, numberOfColumnsB;
             double** matrixA = inputDoubleMatrix("Wprowadz macierz A: \n", numberOfRowsA, numberOfColumnsA);
-            double** matrixB = inputDoubleMatrix("Wprowadz macierz B: \n", numberOfRowsB, numberOfColumnsB);
+            double** matrixB = inputDoubleMatrix("Wprowadz macierz A: \n", numberOfRowsB, numberOfColumnsB);
+            if(numberOfColumnsA != numberOfRowsB) {
+                cout << "Rozmiary macierzy sa nieprawidlowe dla tej operacji! \nProgram zakonczony.";
+                deallocateMatrix(matrixA, numberOfRowsA);
+                deallocateMatrix(matrixB, numberOfRowsB);
+                return 0;
+            }
             double** matrixResult = multiplyMatrix(matrixA, matrixB, numberOfRowsA, numberOfColumnsA, numberOfColumnsB);
             printMatrix(matrixResult, numberOfRowsA, numberOfColumnsB, "Wynik: \n");
             deallocateMatrix(matrixA, numberOfRowsA);
@@ -228,6 +258,12 @@ int main(int argc, char* argv[]) {
             int numberOfRowsA, numberOfColumnsA, numberOfRowsB, numberOfColumnsB;
             int** matrixA = inputIntMatrix("Wprowadz macierz A: \n", numberOfRowsA, numberOfColumnsA);
             int** matrixB = inputIntMatrix("Wprowadz macierz B: \n", numberOfRowsB, numberOfColumnsB);
+            if(numberOfColumnsA != numberOfRowsB) {
+                cout << "Rozmiary macierzy sa nieprawidlowe dla tej operacji! \nProgram zakonczony.";
+                deallocateMatrix(matrixA, numberOfRowsA);
+                deallocateMatrix(matrixB, numberOfRowsB);
+                return 0;
+            }
             int** matrixResult = multiplyMatrix(matrixA, matrixB, numberOfRowsA, numberOfColumnsA, numberOfColumnsB);
             printMatrix(matrixResult, numberOfRowsA, numberOfColumnsB, "Wynik: \n");
             deallocateMatrix(matrixA, numberOfRowsA);
@@ -275,6 +311,11 @@ int main(int argc, char* argv[]) {
         if(floatNumbers) {
             int numberOfRows, numberOfColumns;
             double** matrixA = inputDoubleMatrix("Wprowadz macierz \n", numberOfRows, numberOfColumns);
+            if(numberOfRows != numberOfColumns) {
+                cout << "Rozmiar macierzy jest nieprawidlowy dla tej operacji! \nProgram zakonczony.";
+                deallocateMatrix(matrixA, numberOfRows);
+                return 0;
+            }
             int exponent = inputIntNumber("Wprowadz wykladnik potegi \n");
             double** matrixResult = powerMatrix(matrixA, numberOfRows, numberOfColumns, exponent);
             printMatrix(matrixResult, numberOfRows, numberOfColumns, "Wynik: \n");
@@ -283,6 +324,11 @@ int main(int argc, char* argv[]) {
         } else {
             int numberOfRows, numberOfColumns;
             int** matrixA = inputIntMatrix("Wprowadz macierz \n", numberOfRows, numberOfColumns);
+            if(numberOfRows != numberOfColumns) {
+                cout << "Rozmiar macierzy jest nieprawidlowy dla tej operacji! \nProgram zakonczony.";
+                deallocateMatrix(matrixA, numberOfRows);
+                return 0;
+            }
             int exponent = inputIntNumber("Wprowadz wykladnik potegi \n");
             int** matrixResult = powerMatrix(matrixA, numberOfRows, numberOfColumns, exponent);
             printMatrix(matrixResult, numberOfRows, numberOfColumns, "Wynik: \n");
@@ -294,11 +340,21 @@ int main(int argc, char* argv[]) {
         if(floatNumbers) {
             int numberOfRows, numberOfColumns;
             double** matrixA = inputDoubleMatrix("Wprowadz macierz \n", numberOfRows, numberOfColumns);
+            if(numberOfRows != numberOfColumns) {
+                cout << "Rozmiar macierzy jest nieprawidlowy dla tej operacji! \nProgram zakonczony.";
+                deallocateMatrix(matrixA, numberOfRows);
+                return 0;
+            }
             cout << "Wyznacznik macierzy wynosi " << determinantMatrix(matrixA, numberOfRows, numberOfColumns) << endl;
             deallocateMatrix(matrixA, numberOfRows);
         } else {
             int numberOfRows, numberOfColumns;
             int** matrixA = inputIntMatrix("Wprowadz macierz \n", numberOfRows, numberOfColumns);
+            if(numberOfRows != numberOfColumns) {
+                cout << "Rozmiar macierzy jest nieprawidlowy dla tej operacji! \nProgram zakonczony.";
+                deallocateMatrix(matrixA, numberOfRows);
+                return 0;
+            }
             cout << "Wyznacznik macierzy wynosi " << determinantMatrix(matrixA, numberOfRows, numberOfColumns) << endl;
             deallocateMatrix(matrixA, numberOfRows);
         }
@@ -307,6 +363,11 @@ int main(int argc, char* argv[]) {
         if(floatNumbers) {
             int numberOfRows, numberOfColumns;
             double** matrixA = inputDoubleMatrix("Wprowadz macierz \n", numberOfRows, numberOfColumns);
+            if(numberOfRows != numberOfColumns) {
+                cout << "Rozmiar macierzy jest nieprawidlowy dla tej operacji! \nProgram zakonczony.";
+                deallocateMatrix(matrixA, numberOfRows);
+                return 0;
+            }
             if(matrixIsDiagonal(matrixA, numberOfRows, numberOfColumns))
                 cout << "Macierz jest diagonalna. \n";
             else
@@ -315,6 +376,11 @@ int main(int argc, char* argv[]) {
         } else {
             int numberOfRows, numberOfColumns;
             int** matrixA = inputIntMatrix("Wprowadz macierz \n", numberOfRows, numberOfColumns);
+            if(numberOfRows != numberOfColumns) {
+                cout << "Rozmiar macierzy jest nieprawidlowy dla tej operacji! \nProgram zakonczony.";
+                deallocateMatrix(matrixA, numberOfRows);
+                return 0;
+            }
             if(matrixIsDiagonal(matrixA, numberOfRows, numberOfColumns))
                 cout << "Macierz jest diagonalna \n";
             else
