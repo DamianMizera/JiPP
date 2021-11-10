@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
+project(JiPP)
 set(CMAKE_CXX_STANDARD 14)
 
 add_subdirectory(allocation_basics)
@@ -16,3 +17,6 @@ add_subdirectory(destructor)
 
 add_subdirectory(matrixApp)
 add_subdirectory(matrixLib)
+
+add_subdirectory(e1NoCopyingConstructor)
+add_subdirectory(pojazd)

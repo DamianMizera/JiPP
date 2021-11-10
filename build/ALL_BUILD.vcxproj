@@ -202,6 +202,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{5E6802BA-0E65-3F3B-893C-DD5E22CB0BBA}</Project>
       <Name>destructor</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\e1NoCopyingConstructor\e1NoCopyingConstructor.vcxproj">
+      <Project>{67CDD1CB-E2F2-3F58-B415-3A3868BC9B5F}</Project>
+      <Name>e1NoCopyingConstructor</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\exceptions\exceptions.vcxproj">
       <Project>{050E28A7-5E37-30C6-8F84-C59504CF43ED}</Project>
       <Name>exceptions</Name>
@@ -237,6 +241,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\pointers\pointers_lib.vcxproj">
       <Project>{AA87DB1A-5457-3E1A-9504-329968952A72}</Project>
       <Name>pointers_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\pojazd\pojazd.vcxproj">
+      <Project>{73E6B590-96C5-31BB-A416-4256FCA6F99D}</Project>
+      <Name>pojazd</Name>
     </ProjectReference>
     <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\simplyCalc\simplyCalc.vcxproj">
       <Project>{BDD3C2FA-9A1D-33D2-8216-B0421AFD17B7}</Project>
