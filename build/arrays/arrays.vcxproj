@@ -253,7 +253,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\damia\CLionProjects\JiPP\arrays\CMakeLists.txt">
-      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/damia/CLionProjects/JiPP/arrays/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/damia/CLionProjects/JiPP -BC:/Users/damia/CLionProjects/JiPP/build --check-stamp-file C:/Users/damia/CLionProjects/JiPP/build/arrays/CMakeFiles/generate.stamp

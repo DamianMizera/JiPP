@@ -20,3 +20,7 @@ add_subdirectory(matrixLib)
 
 add_subdirectory(e1NoCopyingConstructor)
 add_subdirectory(pojazd)
+add_subdirectory(node)
+add_subdirectory(vector)
+add_subdirectory(triangle)
+add_subdirectory(imaginary)

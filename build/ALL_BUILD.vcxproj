@@ -106,7 +106,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\damia\CLionProjects\JiPP\CMakeLists.txt">
-      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/damia/CLionProjects/JiPP/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/damia/CLionProjects/JiPP -BC:/Users/damia/CLionProjects/JiPP/build --check-stamp-file C:/Users/damia/CLionProjects/JiPP/build/CMakeFiles/generate.stamp
@@ -226,6 +226,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{11E4DF76-6772-33B8-8BD4-D0FFF4136357}</Project>
       <Name>firstLibCall</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\imaginary\imaginary.vcxproj">
+      <Project>{2117A620-98DA-3AA4-93B3-6B46C01A4002}</Project>
+      <Name>imaginary</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\imaginary\imaginary_lib.vcxproj">
+      <Project>{E07701DD-A73E-39BE-B1EB-3546F8077D4E}</Project>
+      <Name>imaginary_lib</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\matrixApp\matrixApp.vcxproj">
       <Project>{E2CCAFE2-CC48-3338-B7EF-520DCD443918}</Project>
       <Name>matrixApp</Name>
@@ -233,6 +241,14 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\matrixLib\matrixLib.vcxproj">
       <Project>{937D8699-87A8-313C-88AF-5A724732FD9F}</Project>
       <Name>matrixLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\Node\node.vcxproj">
+      <Project>{8EDD1115-DCCC-30F4-B650-6A6BF8E38E33}</Project>
+      <Name>node</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\Node\node_lib.vcxproj">
+      <Project>{CFCBA6F7-6F33-3ED1-8D72-0E14A06715F9}</Project>
+      <Name>node_lib</Name>
     </ProjectReference>
     <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\pointers\pointers.vcxproj">
       <Project>{9B02B671-F2E4-3749-8B3D-F2D0BC18DBC3}</Project>
@@ -253,6 +269,22 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\structures\structures.vcxproj">
       <Project>{01B8FBB7-0CBF-33D2-B0FB-692A4C7B855E}</Project>
       <Name>structures</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\triangle\triangle.vcxproj">
+      <Project>{5FA8B85C-3007-33CF-885A-DB6AAE406FF6}</Project>
+      <Name>triangle</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\triangle\triangle_lib.vcxproj">
+      <Project>{9B9310C5-7212-37D0-92EE-4CC6271C0972}</Project>
+      <Name>triangle_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\vector\vector.vcxproj">
+      <Project>{8374804B-96DD-374B-B4C4-CA7C2E90854A}</Project>
+      <Name>vector</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\vector\vector_lib.vcxproj">
+      <Project>{116D4CF3-0FF4-3FAF-8189-6021DC442076}</Project>
+      <Name>vector_lib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

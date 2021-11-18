@@ -36,3 +36,15 @@ C:/Users/damia/CLionProjects/JiPP/build/e1NoCopyingConstructor/CMakeFiles/e1NoCo
 C:/Users/damia/CLionProjects/JiPP/build/e1NoCopyingConstructor/CMakeFiles/ALL_BUILD.dir
 C:/Users/damia/CLionProjects/JiPP/build/pojazd/CMakeFiles/pojazd.dir
 C:/Users/damia/CLionProjects/JiPP/build/pojazd/CMakeFiles/ALL_BUILD.dir
+C:/Users/damia/CLionProjects/JiPP/build/Node/CMakeFiles/node.dir
+C:/Users/damia/CLionProjects/JiPP/build/Node/CMakeFiles/node_lib.dir
+C:/Users/damia/CLionProjects/JiPP/build/Node/CMakeFiles/ALL_BUILD.dir
+C:/Users/damia/CLionProjects/JiPP/build/vector/CMakeFiles/vector_lib.dir
+C:/Users/damia/CLionProjects/JiPP/build/vector/CMakeFiles/vector.dir
+C:/Users/damia/CLionProjects/JiPP/build/vector/CMakeFiles/ALL_BUILD.dir
+C:/Users/damia/CLionProjects/JiPP/build/triangle/CMakeFiles/triangle.dir
+C:/Users/damia/CLionProjects/JiPP/build/triangle/CMakeFiles/triangle_lib.dir
+C:/Users/damia/CLionProjects/JiPP/build/triangle/CMakeFiles/ALL_BUILD.dir
+C:/Users/damia/CLionProjects/JiPP/build/imaginary/CMakeFiles/imaginary_lib.dir
+C:/Users/damia/CLionProjects/JiPP/build/imaginary/CMakeFiles/imaginary.dir
+C:/Users/damia/CLionProjects/JiPP/build/imaginary/CMakeFiles/ALL_BUILD.dir

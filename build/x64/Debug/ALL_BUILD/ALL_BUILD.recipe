@@ -32,7 +32,13 @@
       <FullPath>C:\Users\damia\CLionProjects\JiPP\build\firstLibCall\Debug\firstLibCall.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
+      <FullPath>C:\Users\damia\CLionProjects\JiPP\build\imaginary\Debug\imaginary.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
       <FullPath>C:\Users\damia\CLionProjects\JiPP\build\matrixApp\Debug\matrixApp.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\damia\CLionProjects\JiPP\build\Node\Debug\node.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
       <FullPath>C:\Users\damia\CLionProjects\JiPP\build\pointers\Debug\pointers.exe</FullPath>
@@ -45,6 +51,12 @@
     </ProjectOutput>
     <ProjectOutput>
       <FullPath>C:\Users\damia\CLionProjects\JiPP\build\structures\Debug\structures.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\damia\CLionProjects\JiPP\build\triangle\Debug\triangle.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\damia\CLionProjects\JiPP\build\vector\Debug\vector.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
       <FullPath>C:\Users\damia\CLionProjects\JiPP\build\x64\Debug\ALL_BUILD</FullPath>
