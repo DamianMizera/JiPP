@@ -214,6 +214,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{27190D3B-8E87-31C3-AFA8-30F4A39F39D4}</Project>
       <Name>exceptions_lib</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\figura\figura.vcxproj">
+      <Project>{2D4794D2-580E-3339-9D7A-DE1D236BF8E4}</Project>
+      <Name>figura</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\firstClass\firstClass.vcxproj">
       <Project>{01D44FD0-FA7A-3F1E-A51B-2484A03B4B7E}</Project>
       <Name>firstClass</Name>
