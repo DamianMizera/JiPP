@@ -254,6 +254,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{CFCBA6F7-6F33-3ED1-8D72-0E14A06715F9}</Project>
       <Name>node_lib</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\note\note.vcxproj">
+      <Project>{F5D3AF43-61ED-3FB8-8439-07BF1D9F43FD}</Project>
+      <Name>note</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\pointers\pointers.vcxproj">
       <Project>{9B02B671-F2E4-3749-8B3D-F2D0BC18DBC3}</Project>
       <Name>pointers</Name>
