@@ -198,6 +198,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{E94496B3-96A0-32AE-9107-69E10AFFDEA4}</Project>
       <Name>constructors</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\containers\containers.vcxproj">
+      <Project>{8F0135F9-16B7-3945-90F8-D722C8FA7CC9}</Project>
+      <Name>containers</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\destructor\destructor.vcxproj">
       <Project>{5E6802BA-0E65-3F3B-893C-DD5E22CB0BBA}</Project>
       <Name>destructor</Name>
@@ -289,6 +293,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\vector\vector.vcxproj">
       <Project>{8374804B-96DD-374B-B4C4-CA7C2E90854A}</Project>
       <Name>vector</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\containers\StopExample\vectorExample.vcxproj">
+      <Project>{8D455CA9-A9FA-3A2E-B198-F8D1A3F46E3C}</Project>
+      <Name>vectorExample</Name>
     </ProjectReference>
     <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\vector\vector_lib.vcxproj">
       <Project>{116D4CF3-0FF4-3FAF-8189-6021DC442076}</Project>

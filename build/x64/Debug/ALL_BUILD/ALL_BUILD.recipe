@@ -17,6 +17,9 @@
       <FullPath>C:\Users\damia\CLionProjects\JiPP\build\constructors\Debug\constructors.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
+      <FullPath>C:\Users\damia\CLionProjects\JiPP\build\containers\Debug\containers.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
       <FullPath>C:\Users\damia\CLionProjects\JiPP\build\destructor\Debug\destructor.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
@@ -63,6 +66,9 @@
     </ProjectOutput>
     <ProjectOutput>
       <FullPath>C:\Users\damia\CLionProjects\JiPP\build\vector\Debug\vector.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\damia\CLionProjects\JiPP\build\containers\StopExample\Debug\vectorExample.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
       <FullPath>C:\Users\damia\CLionProjects\JiPP\build\x64\Debug\ALL_BUILD</FullPath>

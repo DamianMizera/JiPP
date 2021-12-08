@@ -52,3 +52,6 @@ C:/Users/damia/CLionProjects/JiPP/build/figura/CMakeFiles/figura.dir
 C:/Users/damia/CLionProjects/JiPP/build/figura/CMakeFiles/ALL_BUILD.dir
 C:/Users/damia/CLionProjects/JiPP/build/note/CMakeFiles/note.dir
 C:/Users/damia/CLionProjects/JiPP/build/note/CMakeFiles/ALL_BUILD.dir
+C:/Users/damia/CLionProjects/JiPP/build/containers/CMakeFiles/containers.dir
+C:/Users/damia/CLionProjects/JiPP/build/containers/CMakeFiles/ALL_BUILD.dir
+C:/Users/damia/CLionProjects/JiPP/build/containers/StopExample/CMakeFiles/vectorExample.dir
