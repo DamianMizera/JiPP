@@ -381,6 +381,15 @@ structures_IS_TOP_LEVEL:STATIC=OFF
 structures_SOURCE_DIR:STATIC=C:/Users/damia/CLionProjects/JiPP/structures
 
 //Value Computed by CMake
+szablony_BINARY_DIR:STATIC=C:/Users/damia/CLionProjects/JiPP/build/szablony
+
+//Value Computed by CMake
+szablony_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+szablony_SOURCE_DIR:STATIC=C:/Users/damia/CLionProjects/JiPP/szablony
+
+//Value Computed by CMake
 triangle_BINARY_DIR:STATIC=C:/Users/damia/CLionProjects/JiPP/build/triangle
 
 //Value Computed by CMake
@@ -483,7 +492,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=25
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=26
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib

@@ -282,6 +282,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{01B8FBB7-0CBF-33D2-B0FB-692A4C7B855E}</Project>
       <Name>structures</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\szablony\szablony.vcxproj">
+      <Project>{A5CBD02E-3946-3105-94D2-8B6E7C159EDC}</Project>
+      <Name>szablony</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\damia\CLionProjects\JiPP\build\triangle\triangle.vcxproj">
       <Project>{5FA8B85C-3007-33CF-885A-DB6AAE406FF6}</Project>
       <Name>triangle</Name>
